@@ -1,0 +1,30 @@
+.article-list {
+  background-color: #f4f5f5;
+  .article-item {
+    margin: 10px 100px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    .article-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .article-baseinfo {
+      padding: 10px 0px;
+    }
+    .article-type {
+      color: #ccc;
+    }
+    .article-create-data {
+      margin-left: 10px;
+      color: #ccc;
+    }
+    .article-view-count {
+      margin-left: 10px;
+      color: #f0732e;
+    }
+    .introduce-goto {
+      text-align: right;
+    }
+  }
+}

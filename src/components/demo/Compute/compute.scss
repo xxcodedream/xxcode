@@ -1,0 +1,63 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eee;
+  button:focus{
+    outline: 0;
+  }
+  .calculator {
+    --button-width: 80px;
+    --button-height: 80px;
+  
+    display: grid;
+    grid-template-areas:
+      'result result result result'
+      'ac plus-mius precent divide'
+      'number-7 number-8 number-9 multiply'
+      'number-4 number-5 number-6 substract'
+      'number-1 number-2 number-3 add'
+      'number-0 number-0 dot equal';
+    grid-template-columns: repeat(4, var(--button-width));
+    grid-template-rows: repeat(6, var(--button-height));
+  
+    /* 拟态化关键使用boxshaow以及 */
+    /* 左上需要光亮的颜色所以x,y为-8px 模糊半径为16px，扩散半径是-10px 颜色为白氏透明度为1.加逗号，设定右下的第二个阴影*/
+    box-shadow: -8px -8px 16px -10px rgba(255, 255, 255, 1),
+      8px 8px 16px -10px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    border-radius: 25px;
+  }
+  
+  .calculator button {
+    margin: 8px;
+    padding: 0;
+    border: 0;
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+      4px 4px 10px -8px rgba(0, 0, 0, 0.5);
+    border-radius: calc(var(--button-height) / 2);
+    font-size: 24px;
+    font-family: Helvetica;
+    color: #999;
+    /* 渐进颜色 由浅灰色到更浅的灰色 */
+    background: linear-gradient(
+      135deg,
+      rgba(230, 230, 230, 1) 0%,
+      rgba(246, 246, 246, 1) 100%
+    );
+  }
+  .calculator button:active {
+    box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
+      4px 4px 10px -8px rgba(0, 0, 0, 0.5) inset;
+  }
+  .result {
+    padding: 0 20px;
+    text-align: right;
+    line-height: var(--button-height);
+    font-size: 48px;
+    font-family: Helvetica;
+    color: #666;
+  }
+}
+

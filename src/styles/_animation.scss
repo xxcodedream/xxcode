@@ -1,0 +1,4 @@
+@include zoom-animation('top', scaley(0), scaley(1), center top);
+@include zoom-animation('right', scaley(.45, .45), scaley(1, 1), top left);
+@include zoom-animation('bottom', scaley(0), scaley(1), center bottom);
+@include zoom-animation('left', scaley(.45, .45), scaley(1, 1), top left);

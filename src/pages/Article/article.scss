@@ -1,0 +1,23 @@
+.article {
+  margin: 0 100px;
+  .article-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .article-baseinfo {
+    padding-top: 10px;
+    text-align: center;
+    .article-type {
+      color: #ccc;
+    }
+    .article-create-data {
+      margin-left: 10px;
+      color: #ccc;
+    }
+    .article-view-count {
+      margin-left: 10px;
+      color: #f0732e;
+    }
+  }
+}
