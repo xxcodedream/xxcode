@@ -19,7 +19,7 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "antd": "^4.5.3",
     "highlight": "^0.2.4",
-    "highlight.js": "9.15.10",
+    "highlight.js": "10.1.2",
     "marked": "0.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
